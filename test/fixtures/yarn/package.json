@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.5.0",
-		"typescript-esbuild": "latest"
+		"typescript-esbuild": ""
 	},
 	"publishConfig": {
 		"access": "public"
