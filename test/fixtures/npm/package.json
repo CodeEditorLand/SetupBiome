@@ -26,7 +26,7 @@
 		"@biomejs/biome": "1.5.0"
 	},
 	"devDependencies": {
-		"typescript-esbuild": ""
+		"typescript-esbuild": "0.4.5"
 	},
 	"publishConfig": {
 		"access": "public"
