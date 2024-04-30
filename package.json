@@ -1,21 +1,34 @@
 {
 	"name": "setup-biome",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Setup the Biome CLI in GitHub Actions",
-	"module": "src/index.ts",
-	"type": "module",
-	"scripts": {
-		"tag": "bun run scripts/tag-github-action.ts",
-		"build": "bun build . --outfile dist/index.mjs --target node --minify",
-		"check": "biome check . --apply",
-		"typecheck": "tsc --noEmit",
-		"ci": "biome ci ."
+	"keywords": [
+		"land"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SetupBiome#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/SetupBiome/issues"
 	},
-	"keywords": ["biome", "biomejs", "cli", "github-action"],
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/SetupBiome.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
 	"author": {
-		"name": "Nicolas Hedger",
-		"email": "nicolas@hedger.ch"
+		"name": "🌆 — Land —",
+		"email": "Land@PlayForm.Cloud",
+		"url": "HTTPS://Land.PlayForm.Cloud"
 	},
-	"license": "MIT",
+	"type": "module",
+	"module": "src/index.ts",
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"build": "bun build . --outfile dist/index.mjs --target node --minify",
+		"ci": "biome ci .",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
+		"tag": "bun run scripts/tag-github-action.ts"
+	},
 	"dependencies": {
 		"@actions/core": "1.10.1",
 		"@actions/tool-cache": "2.0.1",
@@ -29,11 +42,17 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.7.1",
 		"@octokit/types": "13.4.1",
+		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6",
 		"@types/bun": "1.1.0",
 		"@types/semver": "7.5.8",
-		"lefthook": "1.6.10",
-		"typescript": "5.4.5"
+		"lefthook": "1.6.10"
 	},
-	"packageManager": "bun@1.1.4",
-	"trustedDependencies": ["@biomejs/biome", "lefthook"]
+	"publishConfig": {
+		"access": "public"
+	},
+	"trustedDependencies": [
+		"@biomejs/biome",
+		"lefthook"
+	]
 }
