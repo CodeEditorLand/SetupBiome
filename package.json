@@ -40,11 +40,11 @@
 		"yaml": "2.4.2"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.7.1",
-		"@octokit/types": "13.4.1",
+		"@biomejs/biome": "1.7.2",
+		"@octokit/types": "13.5.0",
 		"@playform/build": "0.0.7",
 		"@playform/document": "0.0.6",
-		"@types/bun": "1.1.0",
+		"@types/bun": "1.1.1",
 		"@types/semver": "7.5.8",
 		"lefthook": "1.6.10"
 	},
