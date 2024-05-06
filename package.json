@@ -34,13 +34,13 @@
 		"@actions/tool-cache": "2.0.1",
 		"@octokit/auth-action": "5.1.1",
 		"@octokit/request-error": "6.1.1",
-		"@octokit/rest": "20.1.0",
+		"@octokit/rest": "20.1.1",
 		"semver": "7.6.0",
 		"ts-dedent": "2.2.0",
 		"yaml": "2.4.2"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.7.2",
+		"@biomejs/biome": "1.7.3",
 		"@octokit/types": "13.5.0",
 		"@playform/build": "0.0.7",
 		"@playform/document": "0.0.6",
