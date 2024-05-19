@@ -2,33 +2,38 @@
 	"name": "setup-biome",
 	"description": "Setup the Biome CLI in GitHub Actions",
 	"module": "src/index.ts",
+	"type": "module",
 	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
+		"tag": "bun run scripts/tag-github-action.ts",
 		"build": "bun build . --outfile dist/index.mjs --target node --minify",
-		"ci": "biome ci .",
-		"prepublishOnly": "Build 'Source/**/*.ts'",
-		"tag": "bun run scripts/tag-github-action.ts"
+		"check": "biome check . --apply",
+		"typecheck": "tsc --noEmit",
+		"ci": "biome ci ."
 	},
+	"keywords": ["biome", "biomejs", "cli", "github-action"],
+	"author": {
+		"name": "Nicolas Hedger",
+		"email": "nicolas@hedger.ch"
+	},
+	"license": "MIT",
 	"dependencies": {
 		"@actions/core": "1.10.1",
 		"@actions/tool-cache": "2.0.1",
 		"@octokit/auth-action": "5.1.1",
 		"@octokit/request-error": "6.1.1",
 		"@octokit/rest": "20.1.1",
-		"semver": "7.6.1",
+		"semver": "7.6.2",
 		"ts-dedent": "2.2.0",
 		"yaml": "2.4.2"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.7.3",
 		"@octokit/types": "13.5.0",
-		"@playform/build": "0.0.7",
 		"@types/bun": "1.1.1",
 		"@types/semver": "7.5.8",
-		"lefthook": "1.6.10"
+		"lefthook": "1.6.10",
+		"typescript": "5.4.5"
 	},
-	"trustedDependencies": [
-		"@biomejs/biome",
-		"lefthook"
-	]
+	"packageManager": "bun@1.1.4",
+	"trustedDependencies": ["@biomejs/biome", "lefthook"]
 }
