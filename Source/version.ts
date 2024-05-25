@@ -166,7 +166,9 @@ const extractVersionFromPackageManifest = async (
 				return undefined;
 			}
 
-			return maxSatisfying(versions, versionSpecifier)?.version ?? undefined;
+			return (
+				maxSatisfying(versions, versionSpecifier)?.version ?? undefined
+			);
 		}
 	} catch {
 		return undefined;
