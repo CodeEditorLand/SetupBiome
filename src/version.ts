@@ -89,8 +89,7 @@ const extractVersionFromPnpmLockFile = async (
 		);
 		return (
 			// pnpm lockfile 9
-			lockfile.importers["."]?.devDependencies["@biomejs/biome"]
-				?.version ??
+			lockfile.importers["."]?.devDependencies["@biomejs/biome"]?.version ??
 			lockfile.importers["."]?.dependencies["@biomejs/biome"]?.version ??
 			// pnpm lockfile 3,4,5,6
 			lockfile.devDependencies?.["@biomejs/biome"]?.version ??
@@ -171,9 +170,7 @@ const extractVersionFromPackageManifest = async (
 				return undefined;
 			}
 
-			return (
-				maxSatisfying(versions, versionSpecifier)?.version ?? undefined
-			);
+			return maxSatisfying(versions, versionSpecifier)?.version ?? undefined;
 		}
 	} catch {
 		return undefined;
