@@ -1,6 +1,6 @@
-import { existsSync } from "node:fs";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
+import { existsSync } from "fs";
+import { readFile } from "fs/promises";
+import { join } from "path";
 import { info, warning } from "@actions/core";
 import type { Octokit } from "@octokit/rest";
 import {
