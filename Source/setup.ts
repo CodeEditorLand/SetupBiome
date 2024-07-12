@@ -1,5 +1,5 @@
-import { chmodSync, renameSync } from "fs";
-import { dirname, join } from "path";
+import { chmodSync, renameSync } from "node:fs";
+import { dirname, join } from "node:path";
 import { addPath, setFailed } from "@actions/core";
 import { downloadTool } from "@actions/tool-cache";
 import { RequestError } from "@octokit/request-error";
