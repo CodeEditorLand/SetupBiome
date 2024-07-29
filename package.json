@@ -1,1 +1,39 @@
-
+{
+	"name": "setup-biome",
+	"description": "Setup the Biome CLI in GitHub Actions",
+	"module": "src/index.ts",
+	"type": "module",
+	"scripts": {
+		"tag": "bun run scripts/tag-github-action.ts",
+		"build": "bun build . --outfile dist/index.mjs --target node --minify",
+		"check": "biome check . --apply",
+		"typecheck": "tsc --noEmit",
+		"ci": "biome ci ."
+	},
+	"keywords": ["biome", "biomejs", "cli", "github-action"],
+	"author": {
+		"name": "Nicolas Hedger",
+		"email": "nicolas@hedger.ch"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@actions/core": "1.10.1",
+		"@actions/tool-cache": "2.0.1",
+		"@octokit/auth-action": "5.1.1",
+		"@octokit/request-error": "6.1.4",
+		"@octokit/rest": "21.0.1",
+		"semver": "7.6.3",
+		"ts-dedent": "2.2.0",
+		"yaml": "2.4.5"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@octokit/types": "13.5.0",
+		"@types/bun": "1.1.6",
+		"@types/semver": "7.5.8",
+		"lefthook": "1.7.11",
+		"typescript": "5.5.3"
+	},
+	"packageManager": "bun@1.1.4",
+	"trustedDependencies": ["@biomejs/biome", "lefthook"]
+}
