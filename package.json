@@ -4,7 +4,7 @@
 		"@actions/tool-cache": "2.0.1",
 		"@octokit/auth-action": "5.1.1",
 		"@octokit/request-error": "6.1.4",
-		"@octokit/rest": "21.0.1",
+		"@octokit/rest": "21.0.2",
 		"semver": "7.6.3",
 		"ts-dedent": "2.2.0",
 		"yaml": "2.5.0"
@@ -14,7 +14,7 @@
 		"@octokit/types": "13.5.0",
 		"@types/bun": "1.1.6",
 		"@types/semver": "7.5.8",
-		"lefthook": "1.7.11"
+		"lefthook": "1.7.14"
 	},
 	"module": "src/index.ts",
 	"name": "setup-biome",
