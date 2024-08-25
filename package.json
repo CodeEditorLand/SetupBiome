@@ -12,7 +12,7 @@
 	"description": "Setup the Biome CLI in GitHub Actions",
 	"devDependencies": {
 		"@octokit/types": "13.5.0",
-		"@types/bun": "1.1.6",
+		"@types/bun": "1.1.8",
 		"@types/semver": "7.5.8",
 		"lefthook": "1.7.14"
 	},
