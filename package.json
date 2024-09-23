@@ -14,7 +14,7 @@
 		"@octokit/types": "13.5.0",
 		"@types/bun": "1.1.10",
 		"@types/semver": "7.5.8",
-		"lefthook": "1.7.15"
+		"lefthook": "1.7.16"
 	},
 	"module": "src/index.ts",
 	"name": "setup-biome",
