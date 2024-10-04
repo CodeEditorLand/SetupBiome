@@ -1,5 +1,6 @@
 import { createActionAuth } from "@octokit/auth-action";
 import { Octokit } from "@octokit/rest";
+
 import { setup } from "./setup";
 import { getBiomeVersion } from "./version";
 
