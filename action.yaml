@@ -2,21 +2,23 @@ name: Setup Biome
 author: biomejs
 description: Setup the Biome CLI in GitHub Actions
 branding:
-  color: yellow
-  icon: terminal
+    color: yellow
+    icon: terminal
 inputs:
-  token:
-    description: GitHub Actions token to authenticate API requests
-    required: true
-    default: ${{ github.token }}
-  version:
-    description: The version of the Biome CLI to install
-    required: true
-    default: ""
-  working-dir:
-    description: The directory in which the action will look for lockfiles to extract the Biome version from
-    required: false
-    default: ""
+    token:
+        description: GitHub Actions token to authenticate API requests
+        required: true
+        default: ${{ github.token }}
+    version:
+        description: The version of the Biome CLI to install
+        required: true
+        default: ""
+    working-dir:
+        description:
+            The directory in which the action will look for lockfiles to extract
+            the Biome version from
+        required: false
+        default: ""
 runs:
-  using: 'node20'
-  main: 'dist/index.mjs'
+    using: "node20"
+    main: "dist/index.mjs"
