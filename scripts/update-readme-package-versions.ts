@@ -36,7 +36,9 @@ const updateReadmePackageVersions = async (
 
 		if (originalContent !== updatedContent) {
 			fs.writeFileSync(readmePath, updatedContent);
-			console.info(`Updated version in ${readmePath} to ${latestVersion}`);
+			console.info(
+				`Updated version in ${readmePath} to ${latestVersion}`,
+			);
 		} else {
 			console.info(`No version changes needed in ${readmePath}`);
 		}
