@@ -1,26 +1,4 @@
 {
-	"name": "setup-biome",
-	"description": "Setup the Biome CLI in GitHub Actions",
-	"keywords": [
-		"biome",
-		"biomejs",
-		"cli",
-		"github-action"
-	],
-	"license": "MIT",
-	"author": {
-		"name": "Nicolas Hedger",
-		"email": "nicolas@hedger.ch"
-	},
-	"type": "module",
-	"module": "src/index.ts",
-	"scripts": {
-		"build": "bun build . --outfile dist/index.mjs --target node --minify",
-		"check": "biome check . --apply",
-		"ci": "biome ci .",
-		"tag": "bun run scripts/tag-github-action.ts",
-		"typecheck": "tsc --noEmit"
-	},
 	"dependencies": {
 		"@actions/core": "1.11.1",
 		"@actions/tool-cache": "2.0.1",
@@ -31,15 +9,20 @@
 		"ts-dedent": "2.2.0",
 		"yaml": "2.5.1"
 	},
+	"description": "Setup the Biome CLI in GitHub Actions",
 	"devDependencies": {
-		"@biomejs/biome": "1.9.3",
 		"@octokit/types": "13.6.1",
 		"@types/bun": "1.1.11",
 		"@types/semver": "7.5.8",
-		"lefthook": "1.7.18",
-		"typescript": "5.6.3"
+		"lefthook": "1.7.18"
 	},
-	"packageManager": "bun@1.1.4",
+	"module": "src/index.ts",
+	"name": "setup-biome",
+	"scripts": {
+		"build": "bun build . --outfile dist/index.mjs --target node --minify",
+		"ci": "biome ci .",
+		"tag": "bun run scripts/tag-github-action.ts"
+	},
 	"trustedDependencies": [
 		"@biomejs/biome",
 		"lefthook"
