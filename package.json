@@ -7,7 +7,7 @@
 		"@octokit/rest": "21.0.2",
 		"semver": "7.6.3",
 		"ts-dedent": "2.2.0",
-		"yaml": "2.5.1"
+		"yaml": "2.6.0"
 	},
 	"description": "Setup the Biome CLI in GitHub Actions",
 	"devDependencies": {
