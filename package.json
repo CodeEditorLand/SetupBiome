@@ -12,9 +12,9 @@
 	"description": "Setup the Biome CLI in GitHub Actions",
 	"devDependencies": {
 		"@octokit/types": "13.6.1",
-		"@types/bun": "1.1.11",
+		"@types/bun": "1.1.12",
 		"@types/semver": "7.5.8",
-		"lefthook": "1.7.22"
+		"lefthook": "1.8.0"
 	},
 	"module": "src/index.ts",
 	"name": "setup-biome",
